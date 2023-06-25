@@ -1,0 +1,53 @@
+body{
+    margin: 1rem 1rem;
+    font-family: Arial;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.notecard{
+    background-color: #182631;
+    border: 1px solid darkblue;
+    border-left: 20px solid darkblue;
+    border-radius: 0.25rem;
+    width: 50%;
+    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.notecard:first-of-type{
+    margin-top: 1rem;
+    color: yellow;
+}
+
+.notecard p{
+    color: white;
+    text-align: justify;
+}
+
+/*
+.notecard:nth-of-type() 
+*/
+
+.notecard:last-of-type{
+    margin-bottom: 1rem;
+}
+
+.w{
+    width: 90%;
+}
+
+.w ul{
+    width: 40%;
+    float: left;
+    list-style-type:square;
+}
+
+.w ol{
+    list-style-type: upper-roman;
+}

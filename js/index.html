@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .content{
+        display: none;
+    }
+    .content.active{
+        display: block;
+    }
+</style>
+
+<body>
+    <p class="temp"></p>
+
+    <h1 class="heading"></h1>
+    <h2 class="heading"></h2>
+    <h3 class="heading"></h3>
+    <h4 class="heading"></h4>
+    <h5 class="heading"></h5>
+    <h6 class="heading"></h6>
+    <p id="para"></p>
+
+    <h1 class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatem tempora officiis ipsum facilis. Dolores saepe soluta quod? Beatae, maxime!</h1>
+
+    <img src="" alt="">
+    <button id="btn1">Show</button>
+    <button id="btn2">Hidden</button>
+
+    <h2 id="heading2"></h2>
+
+    <script>
+        let p = document.getElementById("para");
+        let heading = document.querySelectorAll(".heading");
+        let h2 = document.getElementById("heading2");
+
+        h2.textContent = "Hein Htet San";
+
+        let content = document.querySelector(".content")
+
+        document.getElementById("btn1").addEventListener("click", () => {
+            content.classList.add('active');
+        })
+
+        document.getElementById("btn2").addEventListener("click", () => {
+            content.classList.remove('active');
+        })
+
+
+
+        // map function return new array by taking an array
+
+        // forEach return an array lists of an selected document modal by taking each 
+
+        heading.forEach(e => {
+            e.innerHTML = "heading";
+        })
+
+        p.innerHTML = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, enim?";
+        p.style.fontSize = "20px";
+        p.style.color = "#ff0000";
+    </script>
+
+    <script src="./dayThree.js"></script>
+</body>
+</html>

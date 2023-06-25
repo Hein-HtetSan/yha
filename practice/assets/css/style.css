@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.col1{width: calc(8.33% * 1); float: left;}
+.col2{width: calc(8.33% * 2); float: left;}
+.col3{width: calc(8.33% * 3); float: left;}
+.col4{width: calc(8.33% * 4); float: left;}
+.col5{width: calc(8.33% * 5); float: left;}
+.col6{width: calc(8.33% * 6); float: left;}
+.col7{width: calc(8.33% * 7); float: left;}
+.col8{width: calc(8.33% * 8); float: left;}
+.col9{width: calc(8.33% * 9); float: left;}
+.col10{width: calc(8.33% * 10); float: left;}
+.col11{width: calc(8.33% * 11); float: left;}
+.col12{width: calc(8.33% * 12); float: left;}
+
+
+.row1{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+}
+
+.row2{
+    width: 100%;
+    height: 80px;
+    background-color: aquamarine;
+}
+
+.row3{
+    width: 100%;
+    height: 500px;
+    background-color: violet;
+}
+
+.row4{
+    width: 100%;
+    height: 100vh;
+}
+
+.row5{
+    width: 100%;
+    height: 650px;
+}
+.row6{
+    width: 100%;
+    height: 400px;
+}
+.row7{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.row7-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row8{
+    width: 100%;
+    height: 400px;
+}
+.row9{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+.one, .eight, .twelve , .ten-three{
+    background-color: red;
+    height: 100%;
+}
+
+.two, .seven, .thirteen, .ten-one, .ten-five{
+    background-color: yellow;
+    height: 100%;
+}
+
+.four, .nine, .one-two, .ten-six{
+    height: 100%;
+    background-color: black;
+}
+
+.five, .ten, .one-three , .ten-four{
+    height: 100%;
+    background-color: #4189fc;
+}
+
+.six, .eleven, .one-one, .ten-two{
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.thirteen{
+    padding: 5px;
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://mmwebfonts.comquas.com/fonts/?font=pyidaungsu');
+
+
+:root{
+    --main-brand-color: #297ae3;
+    --primary-color: #15171c;
+    --secondary-color: #232933;
+    --light-secondary-color: #2e3744;
+    --text-color: #fff;
+    --secondary-text-color: #b3b4b6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif, Pyidaungsu;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+h1{
+    font-size: 120px;
+    line-height: 70%;
+}
+
+h1 span{
+    font-size: 60px;
+    line-height: 50%;
+}
+
+.subheading{
+    font-size: 30px;
+    margin-top: 25px;
+    color: var(--secondary-text-color);
+}
+
+header{
+    padding: 100px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.header_text{
+    width: 850px;
+}
+
+.circle{
+    height: 400px;
+    width: 400px;
+    max-width: 20vw;
+    max-height: 20vw;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 20px solid var(--main-brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    margin-bottom: 120px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    position: relative;
+    padding: 3px;
+}
+
+nav a:hover{
+    color: var(--text-color);
+}
+
+nav a::after{
+    content: ' ';
+    height: 2px;
+    width: 0;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+#toogle_button{
+    display: none;
+}
+
+label[for='toogle_button']{
+    display: none;
+}
+
+@media(max-width: 800px){
+    h1{
+        font-size: 12vw;
+        text-align: center;
+    }
+
+ 
+
+    .subheading{
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+    }
+
+    #toogle_button:checked ~ ul{
+        display: flex;
+    }
+
+    label[for="toogle_button"]{
+        display: block;
+    }
+}

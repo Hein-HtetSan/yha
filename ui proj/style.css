@@ -1,0 +1,244 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    z-index: 99;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #efefef;
+    z-index: 90;
+}
+.header .left, .right{
+    display: flex;
+}
+.header .left a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.header .left .active{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+.header .left a:not(.active):hover{
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+.header .right{
+    justify-content: end;
+}
+.header .righttxt{
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.header .righttxt span{
+    padding-left: 10px;
+}
+.header .righttxt input{
+    outline: none;
+    border: none;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    z-index: -1;
+}
+
+.nav .img img{
+    width: 30%;
+}
+.nav .col-4{
+    text-align: center;
+    display: flex;
+}
+.nav .col-4 .text{
+    margin: 0px 10px;
+}
+.nav .container-fluid{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav .container-fluid .row{
+    width: 100%;
+    z-index: 2;
+}
+.nav .container-fluid .row .visiable{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: -120px;
+    left: 0;
+    z-index: -999;
+    padding: 20px 60px;
+    transition: all .5s ease;
+}
+.nav .container-fluid .row .visiable .vtext{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav .container-fluid .row .visiable span{
+    font-weight: bold;
+}
+.nav .container-fluid button{
+    display: none;
+}
+.nav .container-fluid .text{
+    cursor: pointer;
+}
+.nav .container-fluid .left .txt1:hover .v1{
+    top: 120px;
+}
+.nav .container-fluid .left .txt2:hover .v2{
+    top: 120px;
+}
+.nav .container-fluid .right .txt3:hover .v3{
+    top: 120px;
+}
+.nav .container-fluid .right .txt4:hover .v4{
+    top: 120px;
+}
+
+.cards{
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+}
+.cards .img{
+    width: 100%;
+    height: 200px;
+}
+.cards .img img{
+    width: 100%;
+}
+.package{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+.package .text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.package .text h2{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.package .data{
+    margin-top: 50px;
+}
+.package .data span{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.package .data .active{
+    border-bottom: 2px solid black;
+}
+.package .data span:hover{
+    border-bottom: 2px solid black;
+
+}
+.package .data span{
+    margin: 0px 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.package .img{
+    width: 100%;
+    height: 200px;
+}
+.package .img img{
+    width: 100%;
+}
+.package .price{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.package .price button{
+    border: 1px solid rgb(27, 75, 138);
+    outline: none;
+    padding: 3px 10px;
+    transition: all .3s ease;
+}
+.package .price button:hover{
+    border: none;
+    background-color: rgb(27, 75, 138);
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    padding: 30px 50px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+.footer .img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.footer .img img{
+    width: 100%;
+}
+.footer .active{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer h4{
+    font-weight: bold;
+}
+.footer .imgs img{
+    width: 200px;
+}
+.footer .icons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.footer .icons i{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.footer .icons i:hover{
+    color: rgb(27, 75, 138);
+}
+.footer .rw1{
+    border-bottom: 2px solid black;
+}
+.footer .rw2{
+    padding: 20px 0px ;
+}
+.footer .rw2 .terms{
+    display: flex;
+    justify-content: end;
+}
+.footer .rw2 .terms span{
+    margin-right: 30px;
+    font-weight: bold;
+}
